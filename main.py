@@ -42,6 +42,6 @@ for key, val in amounts.items():
     plt.xlabel("Amount")
     plt.ylabel("Time (s)")
     plt.legend()
-    plt.savefig(f"graph_{key}.png")
+    plt.savefig(f"plots/graph_{key}.png")
     plt.clf()
     print(f"Finished timing {key}")
