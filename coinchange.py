@@ -7,14 +7,14 @@ class CoinChange:
         if self.approach == "dp_bottom_up":
             self.dp = [self.amount+1]*(self.amount+1)
             self.dp[0] = 0
-            print(self.dp_bottom_up())
+            self.dp_bottom_up()
         elif self.approach == "dp_top_down":
             self.memo = {}
-            print(self.dp_top_down(self.amount))
+            self.dp_top_down(self.amount)
         elif self.approach == "recursion":
-            print(self.recursion(self.amount))
+            self.recursion(self.amount)
         elif self.approach == "greedy":
-            print(self.greedy())
+            self.greedy()
 
     def dp_bottom_up(self):
         for i in range(1, self.amount+1):
