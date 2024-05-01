@@ -1,4 +1,4 @@
-from CoinChange import CoinChange as cc
+from coinchange import CoinChange as cc
 from matplotlib import pyplot as plt
 from time import perf_counter
 import numpy as np
